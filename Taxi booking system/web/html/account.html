@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Glide on Rider</title>
+    <link rel="stylesheet" href="../css/account.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../app.js" defer></script> <!-- Link to external JS file -->
+</head>
+<body>
+    <!-- Go Back Button -->
+    <a href="dashboard.html" class="go-back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L9.83 12z"/>
+        </svg>
+        Go Back
+    </a>
+
+    <div class="container">
+        <header class="header">
+            <h1>Glide on</h1>
+            <p>Manage your account details below</p>
+        </header>
+
+        <form class="account-form" id="accountForm">
+            <section class="profile-section">
+                <h2>Profile</h2>
+                <div class="info">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="info">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Contact Details</h2>
+                <div class="info">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="info">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="info">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </section>
+
+            <div class="delete-section">
+                <button type="button" class="delete-button">Delete Account</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Account page loaded");
+
+            // Retrieve user data from sessionStorage
+            const userDataString = sessionStorage.getItem("user_data");
+
+            if (userDataString) {
+                const userData = JSON.parse(userDataString);
+                console.log("User data retrieved:", userData);
+
+                // Populate the form with user data
+                document.getElementById("username").value = userData.username || "";
+                document.getElementById("dob").value = userData.dob || "";
+                document.getElementById("email").value = userData.email || "";
+                document.getElementById("phone").value = userData.phone_number || "";
+                document.getElementById("address").value = userData.address || "";
+            } else {
+                alert("No user data found. Please log in.");
+                window.location.href = "/html/login.html";
+            }
+        });
+    </script>
+</body>
+</html>

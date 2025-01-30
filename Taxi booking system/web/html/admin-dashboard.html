@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Active Bookings</title>
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <p>Active Bookings</p>
+    </header>
+    <!-- Active Bookings Table -->
+    <div id="activeBookingsContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Driver</th>
+                    <th>Pickup Location</th>
+                    <th>Drop-off Location</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Distance</th>
+                    <th>Duration</th>
+                    <th>Fare</th>
+                    <th>Created At</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="bookingsTableBody">
+                <!-- Booking rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Available Drivers List Section -->
+    <section class="available-drivers">
+        <h2>Available Drivers</h2>
+        <div id="driversListContainer" class="drivers-list">
+            <!-- Driver cards will be dynamically inserted here -->
+            <table>
+                <thead>
+                <tr>
+                    <th>Driver ID</th>
+                    <th>Full Name</th>
+                    <th>Gmail</th>
+                    <th>Phone</th>
+                    <th>Number Plate</th>
+                    <th>License Number</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+                <tbody id="AvailableDriverTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal for Assigning Drivers -->
+    <div id="assignDriverModal" style="display: none;">
+        <h2>Assign Driver</h2>
+        <select id="driverSelect">
+            <!-- Driver options will be dynamically inserted here -->
+        </select>
+        <button id="confirmAssignButton">Assign</button>
+        <button id="cancelAssignButton">Cancel</button>
+    </div>
+
+</body>
+</html>

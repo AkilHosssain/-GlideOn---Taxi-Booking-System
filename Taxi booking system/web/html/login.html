@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glide on Login Page</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../app.js"></script>
+</head>
+
+<body>
+    <h1><b>Glide on</b></h1>
+    <h3>Connect with friends and the world</h3>
+
+    <!-- Top-right Navigation for Login Options -->
+    <div class="login-options">
+        <a href="admin%20login%20page.html" class="login-option admin">Admin Login</a>
+        <a href="driver-login.html" class="login-option driver">Driver Login</a>
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <label for="loginEmail"></label>
+                <input type="text" name="loginEmail" id="loginEmail" placeholder="Enter your email address">
+                <label for="loginPassword"></label>
+                <input type="password" name="loginPassword" id="loginPassword" placeholder="Enter your password">
+                <div class="link">
+                    <button type="submit" class="login">Login</button>
+                </div>
+                <div>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>Not Registered yet?</h1>
+                    <p>Don't worry! Just a few clicks more, and you are ready to go.</p>
+                    <div>
+                        <a href="registration.html">
+                            <button class="ghost" id="signUp">Register Here</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

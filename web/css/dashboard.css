@@ -1,0 +1,121 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #474747;
+    color: #C6C6FF;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Header styles */
+.header {
+    background-color: #fc7341;  /* Warm orange for header */
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Form container */
+#container {
+    padding: 20px;
+}
+
+/* Input groups layout */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling each input group */
+.input-group {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.input-group:last-child {
+    margin-right: 0;
+}
+
+input {
+    width: 91%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #333;  /* Dark background for inputs */
+    color: white;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #fc7341;
+    box-shadow: 0 0 5px #fc7341;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #fc7341;  /* Warm orange for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4b2b;  /* Lighter red-orange on hover */
+    transform: translateY(-5px);  /* Pulls the button up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Adds a shadow effect to simulate lifting */
+}
+
+button:active {
+    transform: translateY(2px);  /* Slightly lower when pressed */
+    box-shadow: none;
+}
+
+/* Map container */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #fc7341;
+    border-radius: 10px;
+}
+
+/* Menu at the bottom */
+.menu {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;  /* Dark menu background */
+    padding: 10px;
+    z-index: 100;
+}
+
+.menu a {
+    color: white;
+    background-color: #333;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #fc7341;  /* Warm orange on hover */
+    color: white;
+}

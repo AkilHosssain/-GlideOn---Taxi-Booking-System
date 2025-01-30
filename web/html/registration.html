@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="../css/back-button.css" />
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <!-- Back Button -->
+    <a href="login.html" class="go-back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L9.83 12z"/>
+        </svg>
+        Go Back
+    </a>
+
+    <section class="container">
+      <header>Registration Form</header>
+      <form action="#" id="registrationForm" class="form">
+
+        <div class="input-box">
+          <label for="registerUsername">Full Name</label>
+          <input
+            type="text"
+            name="registerUsername"
+            id="registerUsername"
+            placeholder="Enter full name"
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter email address"
+            required
+          />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="dob">Birth Date</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Enter your birth date"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input
+                type="radio"
+                id="check-male"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input
+                type="radio"
+                id="check-female"
+                name="gender"
+                value="female"
+              />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input
+                type="radio"
+                id="check-other"
+                name="gender"
+                value="prefer not to say"
+              />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label>Address</label>
+          <input
+            type="text"
+            id="address-line-1"
+            placeholder="Enter street address"
+            required
+          />
+          <input
+            type="text"
+            id="address-line-2"
+            placeholder="Enter street address line 2"
+          />
+
+          <div class="column">
+            <div class="select-box">
+              <select id="country">
+                <option hidden>Country</option>
+                <option>United Kingdom</option>
+                <option>USA</option>
+              </select>
+            </div>
+            <input type="text" id="city" placeholder="Enter your city" required />
+          </div>
+
+          <div class="column">
+            <input
+              type="text"
+              id="region"
+              placeholder="Enter your region"
+              required
+            />
+            <input
+              type="text"
+              id="postal-code"
+              placeholder="Enter postal code"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <div class="input-box">
+          <label for="confirmPassword"></label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Confirm your Password"
+          />
+        </div>
+        <div>
+          <a href="login.html">
+            <button>Submit</button>
+          </a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

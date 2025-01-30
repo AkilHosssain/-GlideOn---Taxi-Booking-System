@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver's Home Page</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../css/driver-dashboard.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../app.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Your Dashboard</h1>
+        </header>
+
+        <section class="driver-details">
+            <h2>Driver Information</h2>
+            <div class="details-list">
+                <div class="detail">
+                    <strong>Driver ID:</strong> <span id="driver-id">Loading...</span>
+                </div>
+                <div class="detail">
+                    <strong>Name:</strong> <span id="name">Loading...</span>
+                </div>
+                <div class="detail">
+                    <strong>Email:</strong> <span id="email">Loading...</span>
+                </div>
+                <div class="detail">
+                    <strong>Phone:</strong> <span id="phone">Loading...</span>
+                </div>
+                <div class="detail">
+                    <strong>Vehicle Number Plate:</strong> <span id="vehicle-number-plate">Loading...</span>
+                </div>
+                <div class="detail">
+                    <strong>License Number:</strong> <span id="license-number">Loading...</span>
+                </div>
+                <div class="detail">
+                    <strong>Status:</strong> <span id="status">Loading...</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-status">
+            <h2>Trip Assignment</h2>
+            <table id="trip-status">
+                <thead>
+                    <tr>
+                        <th>Task ID</th>
+                        <th>Booking ID</th>
+                        <th>Driver ID</th>
+                        <th>Pick-up Location</th>
+                        <th>Drop-off Location</th>
+                        <th>Date</th>
+                        <th>Time Assigned</th>
+                        <th>Distance</th>
+                        <th>Duration</th>
+                        <th>Fare</th>
+                        <th>Assigned Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="trip-status-body">
+                    <tr>
+                        <td colspan="12">Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <label class="toggle-switch">
+                <input type="checkbox" id="status-toggle" onclick="toggleOnlineStatus()">
+                <span class="slider"></span>
+            </label>
+            <span id="status-text" class="status-text">Go Offline</span>
+        </section>
+    </div>
+</body>
+</html>
