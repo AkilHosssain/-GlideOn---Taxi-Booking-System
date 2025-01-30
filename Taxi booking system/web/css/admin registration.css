@@ -1,0 +1,95 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f5f7;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #fc7341;
+}
+
+button.register-btn {
+    background-color: #fc7341;
+    color: white;
+    border: none;
+    padding: 12px 45px;
+    font-size: 14px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button.register-btn:hover {
+    transform: scale(1.05);
+}
+
+button.register-btn:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+}
+
+p.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p.login-link a {
+    color: #fc7341;
+    text-decoration: none;
+}
+
+p.login-link a:hover {
+    text-decoration: underline;
+}
