@@ -28,7 +28,7 @@ GlideOn/
 │   │── app.js  
 │
 │── docs/            # Documentation (UML diagrams, class diagrams, etc.)
-│── main.py          # Entry point of the application
+│── app.py          # Entry point of the application
 │── database.db      # Database handling (SQLite3)
 │── requirements.txt # Dependencies
 ```
